@@ -6,6 +6,7 @@ const TabelaBody = (props) => (
                 <td>{livro.id}</td>
                 <td>{livro.titulo}</td>
                 <td>{livro.autor}</td>
+                <td>{livro.preço}</td>
                 <td>
                     <button
                         className = "botao remover"

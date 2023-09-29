@@ -11,17 +11,26 @@ class App extends Component {
       {
         id: "123-456-789-99",
         titulo: "CSS Grid Layout",
-        autor: "Mauricio Samy"
+        autor: "Mauricio Samy",
+        preço: "200,00"
       },
       {
         id: "123-456-689-99",
         titulo: "Node Essencial",
-        autor: "Ricardo Lecheta"
+        autor: "Ricardo Lecheta",
+        preço: "50,00"
       },
       {
         id: "123-456-589-99",
         titulo: "Aprendendo Material",
-        autor: "Kyle Mew"
+        autor: "Kyle Mew",
+        preço: "75,00"
+      },
+      {
+        id: "123-456-389-99",
+        titulo: "Aprendendo JavaScript",
+        autor: "Francisco Moreira",
+        preço: "60,00"
       }
     ]
   };
