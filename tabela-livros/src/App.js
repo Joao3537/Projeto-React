@@ -26,13 +26,28 @@ class App extends Component {
     this.setState({livros});
   }
   
+  handleOrdenarCresente = (titulo) => {
+    const livros = this.state.livros.sort((a, b) =>
+      a.titulo < b.titulo ? -1 : 0
+    );
+    this.setState({livros});
+  };
+  handleOrdenarDecresente = (titulo) => {
+    const livros = this.state.livros.sort((a, b) =>
+      a.titulo < b.titulo ? -1 : 0
+    );
+    livros.reverse();
+    this.setState({livros});
+  };
 
   render() {
 
     return (
 
       <table className="tabela">
-        <TabelaHead />
+        <TabelaHead 
+        ordenarCrescente={this.handleOrdenarCresente}
+        ordenarDecrescente={this.handleOrdenarDecresente}/>
         <TabelaBody 
         livros={this.state.livros}
         removerLinha={this.handlerRemoverLinha} />
